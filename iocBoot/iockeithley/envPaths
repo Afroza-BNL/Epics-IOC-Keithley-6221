@@ -1,0 +1,3 @@
+epicsEnvSet("IOC","iockeithley")
+epicsEnvSet("TOP","/epics/iocs/keithley6221")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")

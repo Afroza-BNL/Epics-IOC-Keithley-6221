@@ -1,0 +1,23 @@
+Terminator = LF;
+
+getDeviceInfo {
+    wait 50;
+    ExtraInput = Ignore;
+    out "*IDN?";
+    in "%40c";
+}
+
+getAvailableMemory {
+    wait 50;
+    ExtraInput = Ignore;
+    out "TRAC:FREE?";
+    in "%i";
+}
+
+QueryConnection {
+    wait 50;
+    ExtraInput = Ignore;
+    out "SOUR:DELta:NVPR?";
+    out "%b";
+}
+

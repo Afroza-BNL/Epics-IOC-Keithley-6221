@@ -1,0 +1,29 @@
+record(stringin, "$(P)$(R)IDN")
+{
+    field(DESC, "Get manufacturer and model number")
+    field(DTYP, "stream")
+    field(INP, "@K6221.proto getDeviceInfo $(PORT)")
+    field(PINI, "YES")
+    field(SCAN, "Passive")
+}
+
+record(ai, "$(P)$(R)TracFree")
+{
+    field(DESC, "Query available memory bytes")
+    field(DTYP, "stream")
+    field(EGU, "bytes")
+    field(INP, "@K6221.proto getAvailableMemory $(PORT)")
+    field(PINI, "YES")
+    field(SCAN, "Passive")
+}
+
+record(bo, "$(P)$(R)ConnectQuery")
+{
+    field(DESC, "Query connection to 2182/2182A")
+    field(DTYP, "stream")
+    field(INP, "@K6221.proto QueryConnection $(PORT)")
+    field(PINI, "YES")
+    field(SCAN, "Passive")
+}
+
+

@@ -1,0 +1,7 @@
+#
+# Ansible managed
+#
+NAME=keithley6221
+USER=softioc-tst
+PORT=5026
+HOST=xf31id1-ioc1
